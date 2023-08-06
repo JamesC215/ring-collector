@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Ring list</h1>
+
+{% for ring in rings %}
+        <div class="card" id="index-cards">
+        <a href="{% url 'detail' ring.id %}">
+        <div class="card-content">
+        <span class="car-title">{{ ring.name }}</span>
+        <p>Owner: {{ ring.owner }}</p>
+        <p>Description: {{ ring.description }}</p>
+        </div>
+        </a>
+        </div>
+    {% endfor %}
+
+{% endblock %}

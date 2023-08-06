@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ring Collector</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+    <nav class="nav-extended">
+        <div class="nav-content">
+            <a href="/" class="right">Ring Collector</a>
+          <ul class="tabs tabs-transparent">
+            <li class="tab"><a href="/">Home</a></li>
+            <li class="tab"><a href="/about">About</a></li>
+            <li class="tab"><a href="{% url 'owners_create' %}">Add an Owner</a></li>
+            <li class="tab"><a href="{% url 'owners_index' %}">View All Owners</a></li>
+            <li class="tab"><a href="{% url 'rings_create' %}">Add a new ring</a></li>
+            <li class="tab"><a href="/rings">My Collection</a></li>
+          </ul>
+        </div>
+      </nav>
+      <main class="container">
+        {% block content %}
+        {% endblock %}
+    </main>
+   <footer class="page-footer">
+    <div>
+        All Rights Reserved, &copy; 2023 James Carter
+    </div>
+   </footer>
+</body>
+</html>

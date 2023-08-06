@@ -1,0 +1,40 @@
+body {
+    display : flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer.page-footer {
+    text-align: center;
+    padding-bottom: 10px;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/194/440/971/lord-of-the-rings-mordor-mount-doom-eye-of-sauron-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    text-align: center;
+}
+title {
+    font-size: 20px;
+}
+
+#home-card-one {
+    width: 300px;
+    height: 330px;
+}
+#home-card-two {
+    width: 300px;
+    height: 330px;
+}
+nav {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/194/440/971/lord-of-the-rings-mordor-mount-doom-eye-of-sauron-wallpaper-preview.jpg);
+}
+footer{
+    flex-shrink: 0;
+}

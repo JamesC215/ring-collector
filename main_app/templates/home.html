@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Home Page</h1>
+     <div class="card" id="home-card-one">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src= https://m.media-amazon.com/images/I/71ONheyUpXL.jpg>
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Narya - Ring of Fire<i class="material-icons right"></i></span>
+          <p><a href="rings/">Go and see!</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="activator"><p>Narya - Ring of Fire</p></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>
+      <div class="card" id="home-card-two">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src= "https://cdn.cloudtek.vn/images/2023/06/17/hocmarketing-org-og-12421-the-ultimate-power-of-the-one-ring-revealed.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">The One Ring<i class="material-icons right"></i></span>
+          <p><a href="rings/">Go and see!</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="activator"><p>Narya, Ring of Fire</p></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>  
+  </body>
+</html>
+
+{% endblock %}
